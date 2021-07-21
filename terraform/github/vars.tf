@@ -38,6 +38,19 @@ variable "github_repositories" {
             "has_issues" : true,
             "has_projects" : false,
             "has_wiki" : false
+        },
+        {
+            "name" : "typescript-component-library",
+            "description": "A React component library written in TypeScript with support for styled components",
+            "topics" : ["components", "react", "typescript"],
+            "visibility" : "private",
+            "allow_merge_commit" : true,
+            "allow_rebase_merge" : true,
+            "allow_squash_merge" : true,
+            "has_downloads" : false,
+            "has_issues" : true,
+            "has_projects" : false,
+            "has_wiki" : false
         }
     ]
 }
