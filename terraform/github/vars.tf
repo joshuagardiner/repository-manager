@@ -28,7 +28,7 @@ variable "github_repositories" {
     default = [
         {
             "name" : "aws-ses-lambda-golang",
-            "description": "An AWS Lambda function which invokes the SES service, written in Golang",
+            "description": "An AWS Lambda function written in Golang, which invokes the SES service",
             "topics" : ["aws", "golang", "lambda", "simple-email-service"],
             "visibility" : "private",
             "allow_merge_commit" : true,
@@ -43,6 +43,19 @@ variable "github_repositories" {
             "name" : "typescript-component-library",
             "description": "A React component library written in TypeScript with support for styled components",
             "topics" : ["components", "react", "typescript"],
+            "visibility" : "private",
+            "allow_merge_commit" : true,
+            "allow_rebase_merge" : true,
+            "allow_squash_merge" : true,
+            "has_downloads" : false,
+            "has_issues" : true,
+            "has_projects" : false,
+            "has_wiki" : false
+        },
+        {
+            "name" : "react-web-app",
+            "description": "A React web application written in TypeScript and deployed using Vercel",
+            "topics" : ["react", "typescript", "vercel"],
             "visibility" : "private",
             "allow_merge_commit" : true,
             "allow_rebase_merge" : true,
