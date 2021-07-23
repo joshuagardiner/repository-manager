@@ -53,9 +53,9 @@ variable "github_repositories" {
             "has_wiki" : false
         },
         {
-            "name" : "react-web-app",
-            "description": "A React web application written in TypeScript and deployed using Vercel",
-            "topics" : ["react", "typescript", "vercel"],
+            "name" : "next-react-web-app",
+            "description": "A Next.js web application written in React with TypeScript and deployed using Vercel",
+            "topics" : ["nextjs", "react", "typescript", "vercel"],
             "visibility" : "private",
             "allow_merge_commit" : true,
             "allow_rebase_merge" : true,
