@@ -90,6 +90,19 @@ variable "github_repositories" {
             "has_issues" : true,
             "has_projects" : false,
             "has_wiki" : false
+        },
+        {
+            "name" : "egc",
+            "description": "A web application written in React with TypeScript for Elland Golf Club",
+            "topics" : ["react", "typescript"],
+            "visibility" : "private",
+            "allow_merge_commit" : true,
+            "allow_rebase_merge" : true,
+            "allow_squash_merge" : true,
+            "has_downloads" : false,
+            "has_issues" : true,
+            "has_projects" : false,
+            "has_wiki" : false
         }
     ]
 }
