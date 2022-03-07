@@ -27,6 +27,19 @@ variable "github_repositories" {
     description = "List of the repositories in GitHub"
     default = [
         {
+            "name" : "jg-dev",
+            "description": "A Next.js web application written in React with TypeScript and deployed using Netlify",
+            "topics" : ["nextjs", "react", "typescript", "netlify"],
+            "visibility" : "public",
+            "allow_merge_commit" : true,
+            "allow_rebase_merge" : true,
+            "allow_squash_merge" : true,
+            "has_downloads" : false,
+            "has_issues" : true,
+            "has_projects" : false,
+            "has_wiki" : false
+        },
+        {
             "name" : "typescript-component-library",
             "description": "A React component library written in TypeScript with support for styled components",
             "topics" : ["components", "react", "typescript"],
@@ -54,19 +67,6 @@ variable "github_repositories" {
         },
         {
             "name" : "universal-engineers",
-            "description": "A Next.js web application written in React with TypeScript and deployed using Netlify",
-            "topics" : ["nextjs", "react", "typescript", "netlify"],
-            "visibility" : "private",
-            "allow_merge_commit" : true,
-            "allow_rebase_merge" : true,
-            "allow_squash_merge" : true,
-            "has_downloads" : false,
-            "has_issues" : true,
-            "has_projects" : false,
-            "has_wiki" : false
-        },
-        {
-            "name" : "jg-dev",
             "description": "A Next.js web application written in React with TypeScript and deployed using Netlify",
             "topics" : ["nextjs", "react", "typescript", "netlify"],
             "visibility" : "private",
