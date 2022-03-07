@@ -1,3 +1,9 @@
+# Dependencies
+node_modules
+
+# Husky
+.husky/_
+
 # Terraform
 .terraform
 *.tfstate.backup
