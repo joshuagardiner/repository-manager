@@ -1,0 +1,18 @@
+{
+  "name": "repository-manager",
+  "private": false,
+  "version": "1.0.0",
+  "description": "Manage GitHub repositories using Terraform",
+  "repository": "https://github.com/joshuagardiner/terraform-repository-manager.git",
+  "author": "Joshua Gardiner",
+  "license": "MIT",
+  "scripts": {
+    "apply": "cd terraform/github && terraform apply",
+    "plan": "cd terraform/github && terraform validate && terraform plan",
+    "prepare": "husky install",
+    "validate": "cd terraform/github && terraform validate"
+  },
+  "devDependencies": {
+    "husky": "^7.0.4"
+  }
+}
