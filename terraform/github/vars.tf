@@ -40,9 +40,9 @@ variable "github_repositories" {
             "has_wiki" : false
         },
         {
-            "name" : "typescript-component-library",
-            "description": "A React component library written in TypeScript with support for styled components",
-            "topics" : ["components", "react", "typescript"],
+            "name" : "next-react-web-app",
+            "description": "A Next.js web application written in React with TypeScript and deployed using Vercel",
+            "topics" : ["nextjs", "react", "typescript", "vercel"],
             "visibility" : "private",
             "allow_merge_commit" : true,
             "allow_rebase_merge" : true,
@@ -53,10 +53,10 @@ variable "github_repositories" {
             "has_wiki" : false
         },
         {
-            "name" : "next-react-web-app",
-            "description": "A Next.js web application written in React with TypeScript and deployed using Vercel",
-            "topics" : ["nextjs", "react", "typescript", "vercel"],
-            "visibility" : "private",
+            "name" : "typescript-component-library",
+            "description": "A React component library written in TypeScript with support for styled components",
+            "topics" : ["components", "react", "typescript"],
+            "visibility" : "public",
             "allow_merge_commit" : true,
             "allow_rebase_merge" : true,
             "allow_squash_merge" : true,
