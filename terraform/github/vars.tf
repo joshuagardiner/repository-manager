@@ -27,19 +27,6 @@ variable "github_repositories" {
     description = "List of the repositories in GitHub"
     default = [
         {
-            "name" : "aws-ses-lambda-golang",
-            "description": "An AWS Lambda function written in Golang, which invokes the SES service",
-            "topics" : ["aws", "golang", "lambda", "simple-email-service"],
-            "visibility" : "private",
-            "allow_merge_commit" : true,
-            "allow_rebase_merge" : true,
-            "allow_squash_merge" : true,
-            "has_downloads" : false,
-            "has_issues" : true,
-            "has_projects" : false,
-            "has_wiki" : false
-        },
-        {
             "name" : "typescript-component-library",
             "description": "A React component library written in TypeScript with support for styled components",
             "topics" : ["components", "react", "typescript"],
