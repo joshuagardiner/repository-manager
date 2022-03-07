@@ -8,6 +8,8 @@
   "license": "MIT",
   "scripts": {
     "apply": "cd terraform/github && terraform apply",
+    "apply:refresh": "cd terraform/github && terraform apply -refresh-only",
+    "init:terraform": "cd terraform/github && terraform init",
     "plan": "cd terraform/github && terraform validate && terraform plan",
     "prepare": "husky install",
     "validate": "cd terraform/github && terraform validate"
