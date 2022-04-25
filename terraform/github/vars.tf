@@ -27,6 +27,19 @@ variable "github_repositories" {
   description = "List of the repositories in GitHub"
   default = [
     {
+      "name" : "elland-golf-club",
+      "description" : "A Next.js web application written in React with TypeScript and deployed using Netlify",
+      "topics" : ["nextjs", "react", "typescript", "netlify"],
+      "visibility" : "private",
+      "allow_merge_commit" : true,
+      "allow_rebase_merge" : true,
+      "allow_squash_merge" : true,
+      "has_downloads" : false,
+      "has_issues" : true,
+      "has_projects" : false,
+      "has_wiki" : true
+    },
+    {
       "name" : "jg-dev",
       "description" : "A Next.js web application written in React with TypeScript and deployed using Netlify",
       "topics" : ["nextjs", "react", "typescript", "netlify"],
