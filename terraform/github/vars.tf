@@ -80,3 +80,34 @@ variable "github_repositories" {
     }
   ]
 }
+
+variable "github_issue_labels" {
+  type = set(object({
+    repository = string
+    name       = string
+    color      = string
+  }))
+  description = "List of the issue labels in GitHub"
+  default = [
+    {
+      "repository" = "elland-golf-club"
+      "name"       = "bug"
+      "color"      = "C70039"
+    },
+    {
+      "repository" = "elland-golf-club"
+      "name"       = "dependencies"
+      "color"      = "F333FF"
+    },
+    {
+      "repository" = "elland-golf-club"
+      "name"       = "documentation"
+      "color"      = "33A8FF"
+    },
+    {
+      "repository" = "elland-golf-club"
+      "name"       = "enhancement"
+      "color"      = "33FF3C"
+    }
+  ]
+}
