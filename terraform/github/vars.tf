@@ -23,6 +23,11 @@ variable "github_repositories" {
     has_issues         = bool
     has_wiki           = bool
     has_projects       = bool
+    branch_protection = set(object({
+      pattern        = string
+      enforce_admins = bool
+      status_checks  = list(string)
+    }))
   }))
   description = "List of the repositories in GitHub"
   default = [
@@ -37,7 +42,8 @@ variable "github_repositories" {
       "has_downloads" : false,
       "has_issues" : true,
       "has_projects" : false,
-      "has_wiki" : true
+      "has_wiki" : true,
+      "branch_protection" : []
     },
     {
       "name" : "jg-dev",
@@ -50,7 +56,23 @@ variable "github_repositories" {
       "has_downloads" : false,
       "has_issues" : true,
       "has_projects" : false,
-      "has_wiki" : false
+      "has_wiki" : false,
+      "branch_protection" : [
+        {
+          "pattern" : "main",
+          "enforce_admins" : true,
+          "status_checks" : [
+            "Build"
+          ],
+        },
+        {
+          "pattern" : "develop",
+          "enforce_admins" : true,
+          "status_checks" : [
+            "Build",
+          ],
+        }
+      ]
     },
     {
       "name" : "next-react-web-app",
@@ -63,7 +85,8 @@ variable "github_repositories" {
       "has_downloads" : false,
       "has_issues" : true,
       "has_projects" : false,
-      "has_wiki" : false
+      "has_wiki" : false,
+      "branch_protection" : []
     },
     {
       "name" : "typescript-component-library",
@@ -76,7 +99,8 @@ variable "github_repositories" {
       "has_downloads" : false,
       "has_issues" : true,
       "has_projects" : false,
-      "has_wiki" : false
+      "has_wiki" : false,
+      "branch_protection" : []
     }
   ]
 }
