@@ -13,6 +13,7 @@ variable "github_token" {
 variable "github_repositories" {
   type = set(object({
     name               = string
+    homepage_url       = string
     description        = string
     topics             = list(string)
     visibility         = string
@@ -33,6 +34,7 @@ variable "github_repositories" {
   default = [
     {
       "name" : "elland-golf-club",
+      "homepage_url" : "",
       "description" : "A Next.js web application written in React with TypeScript and deployed using Netlify",
       "topics" : ["nextjs", "react", "typescript", "netlify"],
       "visibility" : "private",
@@ -47,6 +49,7 @@ variable "github_repositories" {
     },
     {
       "name" : "jg-dev",
+      "homepage_url" : "https://joshuagardiner.dev/",
       "description" : "A Next.js web application written in React with TypeScript and deployed using Netlify",
       "topics" : ["nextjs", "react", "typescript", "netlify"],
       "visibility" : "public",
@@ -76,6 +79,7 @@ variable "github_repositories" {
     },
     {
       "name" : "next-react-web-app",
+      "homepage_url" : "",
       "description" : "A Next.js web application written in React with TypeScript and deployed using Vercel",
       "topics" : ["nextjs", "react", "typescript", "vercel"],
       "visibility" : "private",
@@ -90,6 +94,7 @@ variable "github_repositories" {
     },
     {
       "name" : "typescript-component-library",
+      "homepage_url" : "",
       "description" : "A React component library written in TypeScript with support for styled components",
       "topics" : ["components", "react", "typescript"],
       "visibility" : "public",
@@ -100,7 +105,22 @@ variable "github_repositories" {
       "has_issues" : true,
       "has_projects" : false,
       "has_wiki" : false,
-      "branch_protection" : []
+      "branch_protection" : [
+        {
+          "pattern" : "main",
+          "enforce_admins" : true,
+          "status_checks" : [
+            "Build"
+          ],
+        },
+        {
+          "pattern" : "develop",
+          "enforce_admins" : true,
+          "status_checks" : [
+            "Build",
+          ],
+        }
+      ]
     }
   ]
 }
