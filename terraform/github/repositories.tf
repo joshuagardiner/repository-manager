@@ -2,6 +2,7 @@ resource "github_repository" "repository" {
   for_each = { for repo in var.github_repositories : repo.name => repo }
 
   name               = each.value.name
+  homepage_url       = each.value.homepage_url
   description        = each.value.description
   topics             = each.value["topics"]
   visibility         = each.value.visibility
