@@ -33,21 +33,6 @@ variable "github_repositories" {
   description = "List of the repositories in GitHub"
   default = [
     {
-      "name" : "coding-challenges",
-      "homepage_url" : "",
-      "description" : "A series of coding challenges to enhance my coding ability.",
-      "topics" : ["full-stack", "react", "typescript", "web-development"],
-      "visibility" : "private",
-      "allow_merge_commit" : true,
-      "allow_rebase_merge" : true,
-      "allow_squash_merge" : true,
-      "has_downloads" : false,
-      "has_issues" : true,
-      "has_projects" : false,
-      "has_wiki" : false,
-      "branch_protection" : []
-    },
-    {
       "name" : "elland-golf-club",
       "homepage_url" : "",
       "description" : "A Next.js web application written in React with TypeScript and deployed using Netlify",
@@ -60,6 +45,21 @@ variable "github_repositories" {
       "has_issues" : true,
       "has_projects" : false,
       "has_wiki" : true,
+      "branch_protection" : []
+    },
+    {
+      "name" : "food-standards-agency",
+      "homepage_url" : "",
+      "description" : "A web-app coding challenge.",
+      "topics" : ["react", "typescript", "web-app"],
+      "visibility" : "private",
+      "allow_merge_commit" : true,
+      "allow_rebase_merge" : true,
+      "allow_squash_merge" : true,
+      "has_downloads" : false,
+      "has_issues" : true,
+      "has_projects" : false,
+      "has_wiki" : false,
       "branch_protection" : []
     },
     {
@@ -108,6 +108,21 @@ variable "github_repositories" {
       "branch_protection" : []
     },
     {
+      "name" : "subscriptions",
+      "homepage_url" : "",
+      "description" : "A web-app coding challenge.",
+      "topics" : ["react", "typescript", "web-app"],
+      "visibility" : "private",
+      "allow_merge_commit" : true,
+      "allow_rebase_merge" : true,
+      "allow_squash_merge" : true,
+      "has_downloads" : false,
+      "has_issues" : true,
+      "has_projects" : false,
+      "has_wiki" : false,
+      "branch_protection" : []
+    },
+    {
       "name" : "typescript-component-library",
       "homepage_url" : "",
       "description" : "A React component library written in TypeScript with support for styled components",
@@ -136,6 +151,36 @@ variable "github_repositories" {
           ],
         }
       ]
+    },
+    {
+      "name" : "vintage-shop",
+      "homepage_url" : "",
+      "description" : "A web-app coding challenge.",
+      "topics" : ["react", "typescript", "web-app"],
+      "visibility" : "private",
+      "allow_merge_commit" : true,
+      "allow_rebase_merge" : true,
+      "allow_squash_merge" : true,
+      "has_downloads" : false,
+      "has_issues" : true,
+      "has_projects" : false,
+      "has_wiki" : false,
+      "branch_protection" : []
+    },
+    {
+      "name" : "wheel-of-fate",
+      "homepage_url" : "",
+      "description" : "A full-stack coding challenge.",
+      "topics" : ["full-stack", "react", "typescript"],
+      "visibility" : "private",
+      "allow_merge_commit" : true,
+      "allow_rebase_merge" : true,
+      "allow_squash_merge" : true,
+      "has_downloads" : false,
+      "has_issues" : true,
+      "has_projects" : false,
+      "has_wiki" : false,
+      "branch_protection" : []
     }
   ]
 }
