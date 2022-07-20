@@ -33,6 +33,21 @@ variable "github_repositories" {
   description = "List of the repositories in GitHub"
   default = [
     {
+      "name" : "coding-challenges",
+      "homepage_url" : "",
+      "description" : "A series of coding challenges to enhance my coding ability.",
+      "topics" : ["full-stack", "react", "typescript", "web-development"],
+      "visibility" : "private",
+      "allow_merge_commit" : true,
+      "allow_rebase_merge" : true,
+      "allow_squash_merge" : true,
+      "has_downloads" : false,
+      "has_issues" : true,
+      "has_projects" : false,
+      "has_wiki" : false,
+      "branch_protection" : []
+    },
+    {
       "name" : "elland-golf-club",
       "homepage_url" : "",
       "description" : "A Next.js web application written in React with TypeScript and deployed using Netlify",

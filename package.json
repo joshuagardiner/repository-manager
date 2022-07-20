@@ -16,6 +16,6 @@
     "terraform:validate": "cd terraform/github && terraform validate"
   },
   "devDependencies": {
-    "husky": "^7.0.4"
+    "husky": "^8.0.1"
   }
 }
